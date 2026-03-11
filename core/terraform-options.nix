@@ -160,6 +160,20 @@ in
         or https://www.terraform.io/docs/providers/index.html
       '';
     };
+    removed = mkMagicMergeOption {
+      example = {
+        removed = [
+          {
+            from = "aws_instance.example";
+            lifecycle.destroy = false;
+          }
+        ];
+      };
+      description = ''
+        Define a removed resource.
+        See for mote details : https://developer.hashicorp.com/terraform/language/state/remove
+      '';
+    };
     resource = mkReferenceableOption {
       example = {
         resource.aws_instance.web = {
