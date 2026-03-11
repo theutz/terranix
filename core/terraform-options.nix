@@ -119,7 +119,7 @@ in
       };
       description = ''
         Define terraform import.
-        See for mote details : https://developer.hashicorp.com/terraform/language/import
+        See for more details : https://developer.hashicorp.com/terraform/language/import
       '';
     };
     module = mkMagicMergeOption {
@@ -134,6 +134,20 @@ in
         The terraform module system, and has nothing to
         do with the module system of terranix or nixos.
         See for more details : https://www.terraform.io/docs/configuration/modules.html
+      '';
+    };
+    moved = mkMagicMergeOption {
+      example = {
+        moved = [
+          {
+            from = "aws_instance.example";
+            to = "aws_instance.other_example";
+          }
+        ];
+      };
+      description = ''
+        Move a resource from one address to another.
+        See for more details : https://developer.hashicorp.com/terraform/language/block/moved
       '';
     };
     output = mkMagicMergeOption {
@@ -171,7 +185,7 @@ in
       };
       description = ''
         Define a removed resource.
-        See for mote details : https://developer.hashicorp.com/terraform/language/state/remove
+        See for more details : https://developer.hashicorp.com/terraform/language/state/remove
       '';
     };
     resource = mkReferenceableOption {
