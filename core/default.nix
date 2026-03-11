@@ -82,6 +82,7 @@ let
         (whitelist "import") //
         (whitelist "locals") //
         (whitelist "module") //
+        (whitelist "moved") //
         (whitelist "output") //
         (whitelist "provider") //
         (whitelist "removed") //
