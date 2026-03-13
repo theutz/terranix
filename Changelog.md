@@ -2,6 +2,7 @@
 
 ## [Unreleased]
 
+- feat: add `.moved` and `.removed` keywords
 - chore: Add changelog check on CI (#141)
 - Add `lib.evalTerranixConfiguration` for evaluating terranix modules without creating a derivation
 - Add internal `_meta` passthru to `lib.evalTerranixConfiguration`
