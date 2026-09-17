@@ -2,6 +2,7 @@
 
 ## [Unreleased]
 
+- feat(flake): run `terraform validate` via flake checks (#173)
 - chore(default.nix): remove meta section from package derivation (#169)
 - chore(flake): split flake.nix into dendritic sub-modules (#170)
 - feat: add `encrypt`, `use_lockfile`, `skip_credentials_validation` and `skip_region_validation` options to s3 backend (#168)
